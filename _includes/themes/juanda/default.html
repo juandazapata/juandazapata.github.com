@@ -14,6 +14,7 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/foundation.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/app.css" rel="stylesheet" type="text/css" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Open Sans&subset=latin" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -26,8 +27,8 @@
       </ul>
     </nav>
 
-    <div class-'row'>
-      <div class='nine columns'>
+    <div class='row'>
+      <div class='eight columns'>
         {{ content }}
         <br />
         <br />
@@ -36,18 +37,19 @@
         <br />
       </div>
 
-      <div class="three columns sidebar">
-        <h3>About</h3>
-        <img src='{{ ASSET_PATH }}/images/avatar.jpg' />
+      <div class="three pull-one columns sidebar">
+        <h3>About me</h3>
+        <div class="avatar" style='background-image: url("{{ ASSET_PATH }}/images/avatar.jpg")'></div>
         <p>
-        Hi, I'm Juanda, a web developer and entrepreneur from Colombia.
+        Hi, my name is <strong>Juanda</strong> and I'm a web developer and entrepreneur from 
+        <strong>Colombia</strong>.
         </p>
 
         <hr />
 
         <h3>My projects</h3>
         <ul>
-          <li>WeHostels</li>
+          <li><a href='http://wehostels.com' target='_blank'>WeHostels</a></li>
           <li>Komunidad</li>
           <li>ElBalon</li>
         </ul>
