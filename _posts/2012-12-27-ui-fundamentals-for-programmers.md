@@ -18,4 +18,4 @@ My brother is an amazing designer at wehostels
 
 UI is software
 
-<iframe width="420" height="315" src="http://www.youtube.com/watch?v=oHlO8Vt7RrU" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/oHlO8Vt7RrU" frameborder="0" allowfullscreen></iframe>
