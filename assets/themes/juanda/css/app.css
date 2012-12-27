@@ -54,3 +54,9 @@ span.date {
   font-size: 20px;
 }
 
+#footer {
+  background: WhiteSmoke;
+  height: 30px;
+  border-top: 1px solid #ddd;
+  padding: 20px 0 30px 0;
+}
