@@ -20,7 +20,7 @@ p {
 }
 
 nav.top-bar {
-  background: white;
+  background: WhiteSmoke;
   border-bottom: solid 1px #ddd;
 }
 
@@ -34,7 +34,7 @@ nav.top-bar {
   padding: 0 30px;
 }
 
-.sidebar ul > li {
+ul > li {
   list-style: none;
 }
 
