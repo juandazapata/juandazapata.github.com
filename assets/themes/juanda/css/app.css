@@ -35,7 +35,13 @@ nav.top-bar {
 }
 
 ul > li {
+  margin-left: 30px;
+  list-style-type: square;
+}
+
+ul > li.name {
   list-style: none;
+  margin-left: 0;
 }
 
 .avatar {
