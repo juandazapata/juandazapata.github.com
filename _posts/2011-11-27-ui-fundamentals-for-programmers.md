@@ -4,7 +4,6 @@ title: "UI fundamentals for programmers"
 description: "My talk about UI fundamentals for programmers"
 category: 
 tags: []
-published: false
 ---
 Last Nov 24th, I participated in the [Bogodev meetup](http://www.bogodev.org/ "Bogodev meetup") and 
 gave a talk titled "**UI fundamentals for programmers**". My objective with this talk was to share 
@@ -23,39 +22,66 @@ experiences too.
 
 
 ### Motivation
+So, I sued a guy that owed me some money (long story), and then I heard
+that our government just deployed an 'awesome tool' to check the status
+of the legal process... and I found this **piece of shit**:
+
+![UI Crap](/assets/posts/ui-fundamentals/ui-crap.png "UI Crap")
+
+Really? Man, this made my eyes bleed. This made me really sad, sad to
+realize that there are coders who apparently code with no attention to
+detail at all...
+
+I didn't use that 'awesome tool' at all. I just closed the tab window and
+went to take a cold shower, made a prayer for his lost soul and prepared
+the talk about **UI fundamentals**.
 
 
 ### UI is software
+Having worked for a long time developing applications for marketing
+teams, I found that for people with little to no experience in the
+technical field, the **UI is the software itself**. They do not care if
+there are database servers, amazon buckets or any other technological
+component behind. For them, **the software is what they see and what
+they feel**.
+
+I think that the UI should be treated with the same (or more?)
+importance as your models design, infrastructure choices, etc. **It's
+the FIRST LAYER OF YOUR SOFTWARE**, give it some respect.
 
 
 ### We make software for people
-
-
-### Mental models
-
-
-### Least effective difference
+Unless you're coding something in cobol, chances are that you're coding
+something inteded to be used for humans. A videogame, a corporate
+website, a blog, even an API are examples of code that will be used by
+human, keep that in mind.
 
 
 ### Fitt's law
-
-
-### Design flows instead of screens
+Here the idea is pretty simple: **'Do not put negative actions near to
+positive actions'**. In english that'd be: **'Do not put the _delete post_
+button, next to the _edit post_ button'**, that'll create frustration in
+the user when using the UI, because the chances of messing up will be
+high.
 
 
 ### Color psycology
-This is 
+This is a very interesting and extensive matter. I didn't go into a lot
+of deep here, but you should be aware of the basic concepts. Being
+able to understand [why a 'delete' button should be 'red' instead of
+'blue' won't hurt you](https://www.google.com/search?q=color+pshycology+for+web&aq=f&oq=color+pshycology+for+web&aqs=chrome.0.57.3883&sourceid=chrome&ie=UTF-8).
 
 
 ### Tools for rapid prototyping
-Twitter bootstrap, although lately I've been choosing Foundation over Bootstrap because I found it leaner and simpler.
+This one is easy... currently there's no excuse for a programmer to
+deliver a piece of crap like the one that I exposed early. 
 
-Talk about Kuler, mention Sacha Greif book about color theory and also mention his blog post
+When [Twitter Bootstrap](http://twitter.github.com/bootstrap/)  and
+[Foundation Framework](http://foundation.zurb.com/) entered in the game,
+everything changed.
 
-### Kill WordArt!!!
-Use flickr pictures (remember to include the copyright sentence and also make sure that the pictures have the correct license).
-
-Put the links of presentation that don't suck (pt1 and pt2)
+Those frameworks are easily customizable and you could have great
+results with the [right guidance](http://sachagreif.com/color-theory-for-startups/).
 
 ### Resources
 Here are some resources that you might find useful:
