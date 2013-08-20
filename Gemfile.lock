@@ -39,4 +39,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  pygments.rb
   rdiscount

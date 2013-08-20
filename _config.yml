@@ -4,7 +4,15 @@ permalink: /:title
 
 markdown: rdiscount
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [
+  ".rvmrc",
+  "Gemfile",
+  "Gemfile.lock",
+  ".rbenv-version",
+  "README.md",
+  "Rakefile",
+  "changelog.md"
+]
 auto: true
 pygments: true
 paginate: 5
