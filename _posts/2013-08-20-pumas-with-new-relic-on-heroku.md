@@ -13,9 +13,9 @@ that no data is recorded in New Relic.
 To solve that situation, you just need to setup the following
 Heroku config var:
 
-{% highlight bash %}
+<code>
 heroku config:add NEWRELIC_DISPATCHER=Puma
-{% endhighlight %}
+</code>
 
 And voila!, now your New Relic dashboard should be displaying all
 those sexy dashboards and metrics about your app.
