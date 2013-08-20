@@ -19,6 +19,7 @@ try to run your rails project, you get all kind of messages telling you
 that your **rmagick gem** does not work anymore...what a nightmare.  
 
 Try running the following commands in your terminal:
+
 <pre>
   <code class='language-bash'>
    $ cd /usr/local/Cellar/imagemagick/6.8.0-10/lib
@@ -32,3 +33,9 @@ After relinking the libs, you can try to install the gem again and you
 should have no problems.
 
 Hope it helps!
+
+<hr />
+
+_**Update:** It seems that **rmagick** is under development again and the
+compatibility problems are now solved._
+
