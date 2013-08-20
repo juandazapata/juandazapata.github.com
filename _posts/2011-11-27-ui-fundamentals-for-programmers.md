@@ -5,7 +5,7 @@ description: "My talk about UI fundamentals for programmers"
 category: 
 tags: []
 ---
-Last Nov 24th, I participated in the [Bogodev meetup](http://www.bogodev.org/ "Bogodev meetup") and 
+Last Nov 24th, I participated in the _Bogodev meetup_ and 
 gave a talk titled "**UI fundamentals for programmers**". My objective with this talk was to share 
 my **personal** experiences with other developers and to have a nice and animated conversation 
 around those experiences. Since my talk was given in spanish, I'm going to share the key parts of it in this blog post.
@@ -15,7 +15,7 @@ around those experiences. Since my talk was given in spanish, I'm going to share
 I consider this field to be very subjective, because of that, the content of the speech is **VERY** 
 biased by my personal experience. I'm very lucky to have 
 a [brother](http://twitter.com/elrichardini "El Richardini") who happens to be an 
-[awesome graphic designer](http://mishes.com), so a lot of this content is also based on his 
+awesome graphic designer, so a lot of this content is also based on his 
 experiences too.
 
 
