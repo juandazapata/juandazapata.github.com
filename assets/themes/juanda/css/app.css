@@ -90,7 +90,5 @@ span.date-home {
 }
 
 code {
-  font-size: 14px;
-  font-weight: normal;
-  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  line-height: 20px;
 }
