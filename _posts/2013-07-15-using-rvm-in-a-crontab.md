@@ -7,9 +7,8 @@ tags: []
 published: true
 ---
 If you use rvm and need to run a crontab in your server then you
-know that it doesn't work out of the box.
-
-The first thing that you might try to do is something like this:
+know that it doesn't work out of the box. The first thing that
+you might try to do is something like this:
 
 <code>
 1 0 * * * bundle exec ruby /your/awesome/script.rb
