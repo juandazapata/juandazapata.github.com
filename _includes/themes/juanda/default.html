@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | Juanda Zapata</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -19,8 +19,8 @@
   <body>
     <div class='row'>
       <div class='four columns centered'>
-        <div id='main-menu'>
-          <a href='/'>Home</a> | <a href="#">About</a> | <a href='mailto: hello@juanda.me' target='_blank'>Contact</a>
+        <div id='main-menu' style='text-align: center; padding-top: 20px;'>
+          <a href='/'>Blog</a> | <a href="/about/">About</a> | <a href='mailto: hello@juanda.me' target='_blank'>Contact</a>
         </div>
       </div>
     </div>
@@ -38,10 +38,11 @@
 
     <div id="footer">
       <div class="row">
-        <div class="four columns centered">
-          <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a> |
-          <a href="mailto: hello@juanda.me" target='_blank'>Contact me</a> |
-          &copy; 2013
+        <div class="four columns centered" style='text-align:center'>
+          <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+          <br />
+          <br />
+          Juanda Zapata &copy; 2013. 
         </div>
       </div>
     </div>
