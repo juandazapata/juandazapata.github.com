@@ -89,3 +89,9 @@ span.date-home {
   font-size: 15px;
   text-align: center;
 }
+
+code {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+}
