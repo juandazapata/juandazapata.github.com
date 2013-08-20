@@ -90,6 +90,7 @@ to be displayed on a laptop or a desktop computer.
 
 ### Presentation video
 Below you'll find my complete speech (remember that it's in spanish).
+
 <iframe width="640" height="480" src="http://www.youtube.com/embed/oHlO8Vt7RrU" frameborder="0" allowfullscreen></iframe>
 
 ### Presentation slides
