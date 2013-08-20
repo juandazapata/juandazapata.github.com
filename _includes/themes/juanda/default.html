@@ -14,50 +14,24 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/foundation.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/app.css" rel="stylesheet" type="text/css" media="all">
-    <link href="http://fonts.googleapis.com/css?family=Open Sans&subset=latin" rel="stylesheet" type="text/css">
-
   </head>
 
   <body>
-    <nav class="top-bar">
-      <ul>
-        <li class="name">
-          <h1><a href="{{ HOME_PATH }}"><img src='{{ ASSET_PATH }}/images/home.png' /></a></h1>
-        </li>
-      </ul>
-    </nav>
-
     <div class='row'>
-      <div class='eight columns'>
+      <div class='four columns centered'>
+        <div class='main-menu'>
+          <a href='/'>Home</a> | <a href="#">About</a> | <a href='mailto: hello@juanda.me' target='_blank'>Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='twelve columns'>
         {{ content }}
         <br />
         <br />
         <br />
         <br />
         <br />
-      </div>
-
-      <div class="three pull-one columns sidebar">
-        <h3>About me</h3>
-        <div class="avatar hide-for-small" style='background-image: url("{{ ASSET_PATH }}/images/avatar.jpg")'></div>
-        <p>
-        Hi, my name is <strong>Juanda</strong> and I'm a web developer and entrepreneur from 
-        <strong>Colombia</strong>.
-        </p>
-
-        <hr />
-
-        <h3>My startups</h3>
-        <ul>
-          <li><a href='http://komunidad.co' target='_blank'>Komunidad</a></li>
-          <li><a href='http://laredonda.co' target='_blank'>La Redonda</a></li>
-        </ul>
-
-        <hr />
-
-        <a href="https://twitter.com/juanzuluaga" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @juanzuluaga</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
       </div>
     </div>
 
