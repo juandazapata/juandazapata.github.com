@@ -1,23 +1,22 @@
 ---
 layout: default
-title: Juanda
+title: Juanda's Blog
 ---
 
 {% for post in paginator.posts %}
   <div class="row">
-
     <div class="twelve columns post-list">
-      <h2>
+      <h2 class='text-center'>
         <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
         <br />
         <span class="date-home">{{ post.date | date_to_string }}</span>
       </h2>
       <div>
         {{ post.excerpt}}
+        <br />
+        <a style='float: right; font-size: 18px;' href="{{ BASE_PATH }}{{ post.url }}">Read more...</a>
       </div>
     </div>
-
-
   </div>
   <hr />
 {% endfor %}

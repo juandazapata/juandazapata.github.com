@@ -8,7 +8,7 @@ published: true
 ---
 If you use rvm and need to run a crontab in your server then you
 know that it doesn't work out of the box. The first thing that
-you might try to do is something like this:
+you might try to do would be something like this:
 
 <pre>
   <code class='language-bash'>
@@ -16,9 +16,10 @@ you might try to do is something like this:
   </code>
 </pre>
 
-However you will see messages like Gemfile not found and
-crazy stuff like that. The correct way to run it is to invoke
-directly your ruby installation from your rvm gemset. Something like this:
+However you will see all kind of crazy error messages like
+Gemfile not found and shit like that. The correct way to run
+it is to invoke directly your ruby installation from your
+rvm gemset:
 
 <pre>
   <code class='language-bash'>

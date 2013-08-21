@@ -1,11 +1,11 @@
 body {
   color: #333;
-  font-family: Georgia, Cambria, 'Hoefler Text', 'Times New Roman', serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
 }
 
 a {
   color: #F24761;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -23,6 +23,10 @@ h1, h2, h3, h4 {
   padding-top: 25px;
   margin-bottom: 10px;
   font-weight: 700;
+}
+
+h1, h2 {
+  line-height: 55px;
 }
 
 p {
@@ -83,16 +87,40 @@ span.date-home {
   padding: 20px 0 30px 0;
 }
 
-#main-menu {
-  padding: 20px 0;
-  font-size: 15px;
-  text-align: center;
+pre {
+  white-space: pre-wrap;
 }
 
 code {
+  font-size: 15px;
   line-height: 20px;
+  font-family: 'Inconsolata', 'Lucida Console', Monaco, 'Courier New', Courier, monospace;
 }
 
 hr {
   width: 40%;
+}
+
+.my-name, .my-name a, .my-name a:hover {
+  font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+  color: #aaa;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.pagination ul
+{
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.pagination ul li { display: inline; }
+
+.pagination ul li a
+{
+  text-decoration: none;
+  padding: .2em 10px;
+  font-size: 20px;
 }
