@@ -1,21 +1,23 @@
 ---
 layout: default
-title: Juanda's Blog
+title: Random lines by J
 ---
 
+<div class='text-center'>
+  <h1>Random lines by J</h1>
+</div>
 {% for post in paginator.posts %}
   <div class="row">
     <div class="twelve columns post-list">
-      <h2 class='text-center'>
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-        <br />
-        <span class="date-home">{{ post.date | date_to_string }}</span>
-      </h2>
-      <div>
+      <a href="{{ BASE_PATH }}{{ post.url }}">
+        <h1 class='post-title-index'>
+          {{ post.title }}
+        </h1>
+      </a>
+      <div class='excerpt'>
         {{ post.excerpt}}
-        <br />
-        <a style='float: right; font-size: 18px;' href="{{ BASE_PATH }}{{ post.url }}">Read more...</a>
       </div>
+      <span class="post-date-index">Posted on {{ post.date | date_to_string }}</span>
     </div>
   </div>
   <hr />

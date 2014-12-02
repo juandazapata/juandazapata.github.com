@@ -17,50 +17,43 @@
     <link href="{{ ASSET_PATH }}/css/app.css" rel="stylesheet" type="text/css" media="all">
     <link href="http://fonts.googleapis.com/css?family=Libre Baskerville&subset=latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Inconsolata&subset=latin" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/javascripts/highlight.js/styles/solarized_dark.css">
-    <script src="{{ ASSET_PATH }}/javascripts/highlight.js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <link href="http://fonts.googleapis.com/css?family=Nobile&subset=latin" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <div class='row'>
-      <div class='four columns'>
-        <div class='text-left' style='padding-top: 20px; font-size: 20px;'>
-          <a href='/' class='my-name'>Juanda Zapata</a>
-        </div>
-      </div>
 
-      <div class='eight columns text-right'>
-        <div class='text-right' style='padding-top: 20px; font-size: 20px;'>
-          <a href='/'>Blog</a> | <a href="/about/">About me</a>
-        </div>
+    <div class='row top-bar'>
+      <div>
+        <a href='/'>
+          <img src='{{ ASSET_PATH }}/images/juanda-zapata.jpg' alt='Juanda Zapata' class='avatar' />
+        </a>
       </div>
     </div>
-
-    <hr />
 
     <div class='row'>
       <div class='ten columns centered'>
         {{ content }}
         <br />
         <br />
-        <br />
       </div>
     </div>
 
-
     <div id="footer">
       <div class="row">
-        <div class="four columns centered text-center">
-          <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+        <div class="twelve columns centered text-center">
+          <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a> |
+          <a href="{{ BASE_PATH }}/about">About me</a>
           <br />
           <br />
-          Made by <a href='/about/'>Juanda</a> with love &copy; 2013.
+          Made with love in 2014
         </div>
       </div>
     </div>
 
     {% include JB/analytics %}
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/javascripts/highlight.js/styles/github.css">
+    <script src="{{ ASSET_PATH }}/javascripts/highlight.js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
