@@ -2,8 +2,8 @@
 layout: post
 title: "Using MailSpyInterceptor to BCC yourself"
 description: "Using MailSpyInterceptor to BCC yourself"
-category:
-tags: []
+category: Dev
+tags: [ruby, rails, gems]
 published: true
 ---
 

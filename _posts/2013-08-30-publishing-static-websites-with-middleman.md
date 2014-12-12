@@ -2,8 +2,8 @@
 layout: post
 title: "Publishing static websites with Middleman"
 description: "Learn how to host static sites with Middleman"
-category: 
-tags: []
+category: Tutorial
+tags: [ruby, rails, gems]
 published: false
 ---
 

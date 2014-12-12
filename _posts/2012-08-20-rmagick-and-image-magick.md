@@ -2,8 +2,8 @@
 layout: post
 title: "Rmagick gem and Imagemagick with Homebrew"
 description: "How to solve the problems with rmagick and imagemagick after upgrading"
-category: 
-tags: []
+category: Dev
+tags: [ruby, osx, homebrew, gems]
 published: true
 ---
 Let me begin by saying that you should be really ashamed if you're
@@ -16,7 +16,7 @@ all our dependencies.
 So...you just told homebrew to upgrade
 [imagemagick](http://www.imagemagick.org/script/index.php) and when you
 try to run your rails project, you get all kind of messages telling you
-that your **rmagick gem** does not work anymore...you're fucked up.  
+that your **rmagick gem** does not work anymore...you're fucked up.
 
 Try running the following commands in your terminal:
 

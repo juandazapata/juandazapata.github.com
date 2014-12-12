@@ -2,8 +2,8 @@
 layout: post
 title: "Using view helpers in Rails controllers"
 description: "Using view helpers in Rails controllers"
-category: 
-tags: []
+category: Dev
+tags: [rails]
 published: true
 ---
 

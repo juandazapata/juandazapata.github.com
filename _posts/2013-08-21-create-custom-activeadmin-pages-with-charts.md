@@ -2,8 +2,8 @@
 layout: post
 title: "Custom activeadmin pages"
 description: "Learn how to create custom pages in activeadmin"
-category: 
-tags: []
+category: Tutorial
+tags: [ruby, rails, activeadmin, gems]
 published: true
 ---
 

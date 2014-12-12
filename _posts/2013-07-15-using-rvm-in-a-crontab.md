@@ -2,8 +2,8 @@
 layout: post
 title: "Using RVM in a Crontab"
 description: "How to use RVM in a crontab"
-category: 
-tags: []
+category: Dev
+tags: [rvm, osx]
 published: true
 ---
 If you use rvm and need to run a crontab in your server then you

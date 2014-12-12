@@ -2,8 +2,8 @@
 layout: post
 title: "Pumas on Heroku with New Relic"
 description: "New Relic and Puma can play nicely in Heroku"
-category: 
-tags: []
+category: Dev
+tags: [ruby, rails, heroku, puma]
 published: true
 ---
 Puma is an awesomely fast Ruby webserver with a very small memory footprint.

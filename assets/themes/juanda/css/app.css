@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
-a {
+a, a:visited {
   color: #c0392b;
   text-decoration: none;
   -webkit-transition: all .4s;
