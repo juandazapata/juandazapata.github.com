@@ -1,0 +1,11 @@
+.update {
+  background: $warning-yellow;
+  padding: 1rem;
+  font-size: .833em;
+  border-radius: 5px;
+  border: 1px solid darken($warning-yellow, 15%);
+
+  strong {
+    font-size: 1em;
+  }
+}

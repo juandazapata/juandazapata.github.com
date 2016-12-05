@@ -1,1 +1,3 @@
-My blog hosted in Github powered by Jekyll
+# My blog
+
+http://juanda.me
