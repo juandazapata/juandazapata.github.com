@@ -1,0 +1,9 @@
+p {
+  a,
+  a:hover,
+  a:visited {
+    color: $links-color;
+    text-decoration: none;
+    border-bottom: 1px solid $links-color;
+  }
+}

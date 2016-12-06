@@ -20,32 +20,30 @@ display a nice chart showing how many users are **premium** (I know
 that in real world apps you should use something much more robust,
 but let's keep it simple for now).
 
-<pre>
-  <code class='language-ruby'>
-    # app/models/user.rb
-    class User < ActiveRecord::Base
-      # Your class accessors
-      attr_accessible :is_premium
+{% highlight ruby %}
+  # app/models/user.rb
+  class User < ActiveRecord::Base
+    # Your class accessors
+    attr_accessible :is_premium
 
-      # And a bunch of validations, methods, etc...
-    end
-  </code>
-</pre>
+    # And a bunch of validations, methods, etc...
+  end
+{% endhighlight %}
+
+<!--more-->
 
 ### Create the seed data
 We will create a bunch of users so we can display some data in the admin:
 
-<pre>
-  <code class='language-ruby'>
-    # db/seeds.rb
-     (1..500).each do |cont|
-       User.create(
-         name: "User #{cont}",
-         is_premium: [true, false].sample
-       )
-     end
-  </code>
-</pre>
+{% highlight ruby %}
+  # db/seeds.rb
+  (1..500).each do |cont|
+    User.create(
+      name: "User #{cont}",
+      is_premium: [true, false].sample
+    )
+  end
+{% endhighlight %}
 
 
 
@@ -55,27 +53,23 @@ but you can really use whatever you like. For this case I only need 2
 files that will be placed in its own **admin** folder (that folder does
 not exist, so you should create it) like this:
 
-<pre>
-  <code class='language-bash'>
-    # Place the files in their directories...
+{% highlight bash %}
+  # Place the files in their directories...
 
-    app/assets/javascripts/admin/flot/jquery.flot.js
-    app/assets/javascripts/admin/flot/jquery.flot.pie.js
-  </code>
-</pre>
+  app/assets/javascripts/admin/flot/jquery.flot.js
+  app/assets/javascripts/admin/flot/jquery.flot.pie.js
+{% endhighlight %}
 
 Now to load those files in the admin using the **assets
 pipeline**, we need to add them to the `active_admin.js.coffee` file:
 
-<pre>
-  <code class='language-coffeescript'>
-    # app/assets/javascripts/active_admin.js.coffee
+{% highlight coffeescript %}
+  # app/assets/javascripts/active_admin.js.coffee
 
-    #= require active_admin/base
-    #= require admin/flot/jquery.flot
-    #= require admin/flot/jquery.flot.pie
-  </code>
-</pre>
+  #= require active_admin/base
+  #= require admin/flot/jquery.flot
+  #= require admin/flot/jquery.flot.pie
+{% endhighlight %}
 
 Now our JS are being served using the rails assets pipeline (minified,
 concatenated, gzipped, etc). Remember that you can do that to include
@@ -89,58 +83,54 @@ formats such as `haml`.
 
 So, we create our partial view:
 
-<pre>
-  <code class='language-html'>
-    # app/views/admin/user/_charts.html.erb
-    &lt;h1&gt;Hello world!&lt;/h1&gt;
-  </code>
-</pre>
+{% highlight html %}
+  # app/views/admin/user/_charts.html.erb
+  <h1>Hello world!</h1>
+{% endhighlight %}
 
 And then in the admin controller:
 
-<pre>
-  <code class='language-ruby'>
-    # app/admin/user.rb
+{% highlight ruby %}
+  # app/admin/user.rb
 
-    ActiveAdmin.register User do
-      actions :all, only: [:index]
-    
-      index do
-        render partial: 'charts'
-      end
+  ActiveAdmin.register User do
+    actions :all, only: [:index]
+
+    index do
+      render partial: 'charts'
     end
-  </code>
-</pre>
+  end
+{% endhighlight %}
 
 Now when you visit `/admin/users` you should see your partial template
 being rendered:
 
-![Hello world](/assets/posts/custom_active_admin_pages/hello_world.png)
+![Hello world](/images/posts/custom_active_admin_pages/hello_world.png)
 
 
 ### Displaying the data in a chart
 Now we just need to query the data and pass it as a local variable
 to the partial. Let's begin with that:
 
-<pre>
-  <code class='language-html'>
-    &lt;!-- app/views/admin/users/_charts.html.erb &gt;
-    &lt;div style='float: left'&gt;
-      &lt;h2&gt;Premium users&lt;/h2&gt;
-      &lt;div id="premium_users_pie" style='height: 400px; width: 400px'&gt;&lt;div&gt;
-    &lt;/div&gt;
-    
-    &lt;script type="text/javascript"&gt;
-    $(document).ready(function(){
-      var users = &lt;%= raw users %&gt;
-      $.plot('#premium_users_pie', users, {
-        series: { pie: { show: true } },
-        legend: { show: false }
-      });
+{% highlight html %}
+  <!-- app/views/admin/users/_charts.html.erb -->
+  <div style='float: left'>
+    <h2>Premium users</h2>
+    <div id="premium_users_pie"
+         style='height: 400px; width: 400px'>
+    <div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var users = <%= raw users %>
+    $.plot('#premium_users_pie', users, {
+      series: { pie: { show: true } },
+      legend: { show: false }
     });
-    &lt;/script&gt;
-  </code>
-</pre>
+  });
+  </script>
+{% endhighlight %}
 
 Basically we're setting our view up to display the JS chart, this step
 will vary depending on the charting library that you're using.
@@ -153,31 +143,29 @@ requires JSON format, but this might not be your case).
 Now let's get that data and generate the JSON, to do that we need to
 modify the admin controller again:
 
-<pre>
-  <code class='language-ruby'>
-    # app/admin/user.rb
+{% highlight ruby %}
+  # app/admin/user.rb
 
-    ActiveAdmin.register User do
-      actions :all, only: [:index]
-    
-      index do
-        premium_users = User.count(group: 'is_premium')
-        json_data = []
-        premium_users.each do |key, value|
-          json_data << {
-            label: key,
-            data: value
-          }
-        end
-    
-        render partial: 'charts', locals: {
-          users: json_data.to_json
+  ActiveAdmin.register User do
+    actions :all, only: [:index]
+
+    index do
+      premium_users = User.count(group: 'is_premium')
+      json_data = []
+      premium_users.each do |key, value|
+        json_data << {
+          label: key,
+          data: value
         }
       end
 
+      render partial: 'charts', locals: {
+        users: json_data.to_json
+      }
     end
-  </code>
-</pre>
+
+  end
+{% endhighlight %}
 
 That's it, we query the database so we can get the total users grouped
 by the `is_premium` attribute and then we create a JSON response and
@@ -187,6 +175,6 @@ needs that specific JSON format but once again, this might not be your case.
 Now it's time to check our admin again, let's visit `/admin/users` in
 our browser and we should see a nice pie chart with our data.
 
-![Pie chart](/assets/posts/custom_active_admin_pages/pie_chart.png)
+![Pie chart](/images/posts/custom_active_admin_pages/pie_chart.png)
 
 That's it! Happy charting!

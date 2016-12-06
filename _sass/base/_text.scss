@@ -1,0 +1,65 @@
+* {
+  font-family: $monospace-font-family;
+  font-size: $base-font-size;
+}
+
+html {
+  color: $text-color;
+  text-rendering: geometricPrecision;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  color: $headings-color;
+  font-weight: 400;
+
+  a,
+  a:hover {
+    color: $headings-color;
+  }
+}
+
+p,
+ul {
+  font-size: 1em;
+  line-height: 1.728em;
+  font-weight: 300;
+  margin-bottom: 2.074rem;
+}
+
+a {
+  color: $links-color;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $gray-borders;
+}
+
+pre,
+code {
+  font-family: $monospace-font-family;
+  background: $gray-borders;
+}
+
+p code.highlighter-rouge {
+  background: $gray-borders;
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0 1px;
+  font-size: .833em;
+}
+
+strong {
+  font-weight: 600;
+}

@@ -12,6 +12,8 @@ website such as a marketing site for an iPhone app, an _SPA_ using Ember or
 Angular or whatever, etc...Creating such website using **rails** would
 be an overkill but here comes [middleman](http://middlemanapp.com) to the rescue.
 
+<!--more-->
+
 ### Why?
 Because it's super simple, there're virtually no security concerns (you
 don't have a database) and you can host it on **Amazon S3** and serve
@@ -72,6 +74,6 @@ middleman invalidate
 Check middleman docs
 Some websites in middleman (Ember site)
 
-![Pie chart](/assets/posts/custom_active_admin_pages/pie_chart.png)
+![Pie chart](/images/posts/custom_active_admin_pages/pie_chart.png)
 
 That's it! Happy charting!

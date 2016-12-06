@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
+
+$base-font-size: 14px;
+
+$monospace-font-family: "Fira Mono", Menlo, Monaco, Inconsolata, Consolas,
+                        "Liberation Mono", Courier, monospace;
+
+$headings-font-family: $monospace-font-family;
+
+$text-color: #c555a;
+$headings-color: #292e31;
+$links-color: #1755f9;
+
+$gray-borders: #eaecee;
+$gray-muted: #939da3;
+$gray-background: #f5f7f9;
+$gray-background-code: #fafafb;
+
+$warning-yellow: #fdf7dc;
