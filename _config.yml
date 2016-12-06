@@ -17,5 +17,3 @@ exclude:
   - Gemfile.lock
 excerpt_separator: <!--more-->
 google_analytics: UA-37285911-1
-disqus:
-  shortname: juandazuluaga
