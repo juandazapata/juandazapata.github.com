@@ -59,6 +59,10 @@ p code.highlighter-rouge {
   font-size: .833em;
 }
 
+.highlighter-rouge .highlight {
+  background: $gray-borders;
+}
+
 strong {
   font-weight: 600;
 }
