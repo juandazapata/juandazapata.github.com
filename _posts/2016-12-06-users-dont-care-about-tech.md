@@ -17,7 +17,7 @@ _monolith_. They don't care if your API is in _Rails_ or in _Go_.
 All they care about is if **you solve a problem for them or not**. **And they
 will pay you if your product is good enough**. That's all. Nobody really cares
 if
-[Slack uses PHP](https://slack.engineering/taking-php-seriously-cf7a60065329#.av6sp0omd)
+[Slack uses PHP](https://slack.engineering/taking-php-seriously-cf7a60065329#.av6sp0omd){:rel="nofollow"}{:target="_blank"}
 or not, we just use it because it solves a problem.
 
 However if you build the wrong product, it won't matter how many good technical

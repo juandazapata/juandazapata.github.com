@@ -15,7 +15,7 @@ bugs and notice problems early on.
 
 <!--more-->
 
-I created the [MailSpyInterceptor gem](https://github.com/juandazapata/mail_spy_interceptor).
+I created the [MailSpyInterceptor gem](https://github.com/juandazapata/mail_spy_interceptor){:rel="nofollow"}{:target="_blank"}.
 Once installed, it will simply BCC the email(s) that you define in every email
 that your system sends.
 
@@ -38,6 +38,4 @@ That's it. You can pass a string with a single email or a string with comma
 separated emails.
 
 If you don't know about Mailer Interceptors, I recommend you to check the
-[mailer guides](http://guides.rubyonrails.org/action_mailer_basics.html#intercepting-emails).
-
-Pull requests are welcomed.
+[mailer guides](http://guides.rubyonrails.org/action_mailer_basics.html#intercepting-emails){:rel="nofollow"}{:target="_blank"}

@@ -16,9 +16,9 @@ I'm going to share the key parts in this post.
 ## Disclaimer
 I consider myself a _noob_ in this field. The content of the talk is mostly
 based on my personal experience. I'm very lucky to have
-a [brother](http://twitter.com/elrichardini "El Richardini") who happens to be
-a graphic designer, so a lot of this content is also based on his
-experiences as well.
+a [brother](http://twitter.com/elrichardini "El Richardini"){:rel="nofollow"}{:target="_blank"}
+who happens to be a graphic designer, so a lot of this content is also based on
+his experiences as well.
 
 <!--more-->
 
@@ -61,35 +61,34 @@ button, next to the _edit post_ button"**, that'll create stress in the user
 of your system, because the chances of making a mistake will be high.
 
 
-## Color psycology
+## Color psychology
 This is a very interesting and extensive topic. I didn't go into a lot
 of detail here, but you should be aware of the basic concepts. Being
 able to understand [why a "delete" button should be "red" instead of
-"blue"](https://www.google.com/search?q=color+pshycology+for+web).
+"blue"](https://www.google.com/search?q=color+psychology+for+web){:rel="nofollow"}{:target="_blank"} would
+help a lot.
 
 
 ## Tools for rapid prototyping
 This one is easy... currently there's no excuse for a programmer to
 deploy sometning similar to the example that I mentioned earlier. 
 
-When [Twitter Bootstrap](http://twitter.github.com/bootstrap/)  and
-[Foundation Framework](http://foundation.zurb.com/) emerged,
+When [Twitter Bootstrap](http://twitter.github.com/bootstrap/){:rel="nofollow"}{:target="_blank"}  and
+[Foundation Framework](http://foundation.zurb.com/){:rel="nofollow"}{:target="_blank"} emerged,
 everything changed. Those frameworks are easily customizable and give you a
 decent starting point for your project.
 
 ## Resources
 Here are some resources that you might find useful:
 
-- **[Don't make me think](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758)**: An 
+- **[Don't make me think](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758){:rel="nofollow"}{:target="blank"}**: An 
 oldie, but for some UI designers this is the holy grail of web usability. Highly
 recommended.
-- **[ OS X Human Interface Guidelines ](https://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines/Menus/Menus.html#//apple_ref/doc/uid/TP30000356-TP6)**: This is a beautiful gem if you are designing something intended
-to be displayed on a laptop or a desktop computer.
-- **[ iOS Human Interface Guidelines ](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)**: Same as above but intended for mobile applications.
+- **[Apple Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/){:rel="nofollow"}{:target="_blank"}**: This is a beautiful gem if you are designing any product intended to be displayed in a screen.
 
 
 ### Presentation video
-Below you'll find the full takl (in spanish).
+Below you'll find the full talk (in spanish).
 
 <div class="responsive-embed">
   <iframe width="640" height="480" src="http://www.youtube.com/embed/oHlO8Vt7RrU" frameborder="0" allowfullscreen></iframe>

@@ -7,7 +7,7 @@ tags: [ruby, rails, activeadmin, gems]
 published: true
 ---
 
-[Activeadmin](http://activeadmin.info) is such a nice tool if you want
+[Activeadmin](http://activeadmin.info){:rel="nofollow"}{:target="_blank"} is such a nice tool if you want
 a quick admin backend (who wants to write an admin backend right?), it
 has a pretty simple DSL and a very decent UI. It is also a very
 active project under constant improvement which always is a good thing.
@@ -48,7 +48,7 @@ We will create a bunch of users so we can display some data in the admin:
 
 
 ### Setup the JS charts library
-For this example, we're using [flot charts](http://www.flotcharts.org/)
+For this example, we're using [flot charts](http://www.flotcharts.org/){:rel="nofollow"}{:target="_blank"}
 but you can really use whatever you like. For this case I only need 2
 files that will be placed in its own **admin** folder (that folder does
 not exist, so you should create it) like this:

@@ -7,9 +7,9 @@ tags: [ruby, osx, homebrew, gems]
 published: true
 ---
 Dependency management is **hard**. Some of us are still stucked with
-[rmagick](https://github.com/rmagick/rmagick), and sadly this library hasn't
+[rmagick](https://github.com/rmagick/rmagick){:rel="nofollow"}{:target="_blank"}, and sadly this library hasn't
 been updated in years. I think that
-[minimagick](https://github.com/minimagick/minimagick) is a good replacement,
+[minimagick](https://github.com/minimagick/minimagick){:rel="nofollow"}{:target="_blank"} is a good replacement,
 but sometimes we just can't control all our dependencies.
 
 After upgrading `imagemagick` via `homebrew`, you try to run your rails project,

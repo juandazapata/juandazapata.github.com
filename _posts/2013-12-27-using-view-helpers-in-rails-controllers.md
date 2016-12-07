@@ -12,7 +12,7 @@ nicely format a flash message. It turns out that it's a simple thing to
 do.
 
 In my particular case, I had a helper to format a phone number using the
-[phony gem](https://github.com/floere/phony).
+[phony gem](https://github.com/floere/phony){:rel="nofollow"}{:target="_blank"}.
 
 {% highlight ruby %}
   # app/helpers/application_helper.rb
@@ -43,4 +43,4 @@ invoking the `view_context` object:
 {% endhighlight %}
 
 You can see more about the `view_context` object in the
-[api dock](http://apidock.com/rails/AbstractController/Rendering/view_context).
+[api dock](http://apidock.com/rails/AbstractController/Rendering/view_context){:rel="nofollow"}{:target="_blank"}.
