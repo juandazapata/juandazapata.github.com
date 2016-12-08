@@ -24,7 +24,7 @@ find particularly interesting the scalability and architectural problems;
 however above all, what I value the most is to work on things that solve real
 problems for real people.
 
-I have a [github profile](https://github.com/juandazapata){:target="_blank"}{rel:"nofollow"},
+I have a [github profile](https://github.com/juandazapata){:target="_blank"}{:rel="nofollow"},
 a [twitter profile](https://twitter.com/juanzuluaga){:target="_blank"}{:rel="nofollow"}
 and sometimes write in my blog.
 
